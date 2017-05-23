@@ -6,6 +6,81 @@
     background-color: @bg-main;
     z-index: 2;
   }
+  .carousel-inner {
+    margin-bottom: 17px;
+  }
+  .carousel-indicators {
+    z-index: 15;
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    position: static;
+    display: -webkit-flex;
+    display: -moz-flex;
+    display: -ms-flex;
+    display: -o-flex;
+    display: flex;
+    justify-content: space-between;
+    li {
+      width: 15%;
+      height: auto;
+      margin: 0;
+      text-indent: 0;
+      border: none;
+      border-radius: 0;
+      background-color: none;
+      border: 2px solid transparent;
+      &.active {
+        border-color: @orange;
+        width: 15%;
+        height: auto;
+        background-color: none;
+      }
+    }
+  }
+
+  .carousel-control {
+    width: 10%;
+    height: 52px;
+    bottom: auto;
+    background-image: none;
+    background-repeat: no-repeat;
+    top: 50%;
+    margin-top: -26px;
+    opacity: 0.9;
+
+    &.left {
+      background-image: url(../img/prev.png);
+      background-position: left top;
+      left: 25px;
+    }
+    &.right {
+      background-image: url(../img/next.png);
+      background-position: right top;
+      right: 25px;
+    }
+  }
+  .carousel-caption {
+    padding: 20px;
+    padding-top: 15px;
+    left: 40px;
+    bottom: 30px;
+    right: auto;
+    background-color: rgba(232, 96, 60, 0.8);
+    color: @white;
+    text-align: left;
+    width: 413px;
+
+    h1 {
+      margin: 0;
+      margin-bottom: 15px;
+      font-size: 18px;
+    }
+    p {
+      margin: 0;
+      font-size: 12px;
+    }
+  }
 }
 .slider__bg-stripe {
   position: absolute;
@@ -15,36 +90,4 @@
   top: 0;
   background-color: rgba(232, 96, 60, 0.5);
   z-index: 1
-}
-.carousel-inner {
-  margin-bottom: 17px;
-}
-.carousel-indicators {
-  z-index: 15;
-  width: 100%;
-  margin: 0;
-  padding: 0;
-  position: static;
-  display: -webkit-flex;
-  display: -moz-flex;
-  display: -ms-flex;
-  display: -o-flex;
-  display: flex;
-  justify-content: space-between;
-  li {
-    width: 15%;
-    height: auto;
-    margin: 0;
-    text-indent: 0;
-    border: none;
-    border-radius: 0;
-    background-color: none;
-    border: 2px solid transparent;
-    &.active {
-      border-color: @orange;
-      width: 15%;
-      height: auto;
-      background-color: none;
-    }
-  }
 }

@@ -5,6 +5,10 @@ nav.navbar {
   margin: 0;
   height: 70px;
 
+  @media (max-width: 750px) {
+    height: auto;
+  }
+
   h1 {
     float: left;
     margin: 0;
@@ -50,6 +54,9 @@ nav.navbar {
   line-height: initial;
   font-size: 36px;
   letter-spacing: 1.5px;
+  @media (max-width: 750px) {
+    margin-top: 0 !important;
+  }
 
   span {
     color: @pale-orange;
