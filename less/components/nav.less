@@ -1,0 +1,57 @@
+// main: ../../less/style.less
+nav.navbar {
+  border: none;
+  background-color: transparent;
+  margin: 0;
+  height: 70px;
+
+  h1 {
+    float: left;
+    margin: 0;
+  }
+
+  .navbar-nav {
+    font-size: 16px;
+    letter-spacing: 1px;
+    color: @gray;
+
+    li {
+      &.active {
+        a,
+        a:hover {
+          color: @orange;
+          background-color: transparent;
+        }
+      }
+      &:last-child {
+        a {
+          padding-right: 0;
+        }
+      }
+
+      a {
+        line-height: 40px;
+        color: inherit;
+        &:hover {
+          color: @orange;
+        }
+      }
+    }
+
+
+  }
+}
+.navbar-brand {
+  margin: 0 !important;
+  margin-top: 15px !important;
+  padding: 0;
+  display: block;
+  height: auto;
+  line-height: initial;
+  font-size: 36px;
+  letter-spacing: 1.5px;
+
+  span {
+    color: @pale-orange;
+  }
+}
