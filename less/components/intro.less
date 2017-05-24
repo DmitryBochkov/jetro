@@ -11,6 +11,11 @@
       margin-bottom: 30px;
       font-size: 18px;
       line-height: 1.33;
+
+      @media (min-width: 850px) and (max-width: 1050px) {
+        min-height: 72px;
+      }
+
       a {
         &:hover,
         &:active,
@@ -27,9 +32,9 @@
       }
     }
     p {
+      min-height: 135px;
       font-size: 12px;
       line-height: 1.5;
-      min-height: 145px;
     }
     &:nth-child(1) {
       h1 {
@@ -62,6 +67,14 @@
           left: 5px;
           top: 5px;
         }
+      }
+    }
+
+    @media (max-width: 850px) {
+      margin-bottom: 50px;
+
+      p {
+        min-height: initial;
       }
     }
   }

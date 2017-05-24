@@ -1,10 +1,17 @@
 // main: ../../less/style.less
 .slider--header {
   position: relative;
+
+  @media (max-width: 550px) {
+    padding: 0;
+  }
   .container {
     position: relative;
     background-color: @bg-main;
     z-index: 2;
+  }
+  .carousel-wrapper {
+    position: relative;
   }
   .carousel-inner {
     margin-bottom: 17px;
@@ -59,6 +66,24 @@
       background-position: right top;
       right: 25px;
     }
+
+    @media (max-width: 850px) {
+      width: 30px;
+      height: 45px;
+      margin-top: -22px;
+      background-size: cover;
+    }
+    @media (max-width: 600px) {
+      width: 20px;
+      height: 30px;
+      margin-top: -15px;
+      &.left {
+        left: 5px;
+      }
+      &.right {
+        right: 5px;
+      }
+    }
   }
   .carousel-caption {
     padding: 20px;
@@ -79,6 +104,15 @@
     p {
       margin: 0;
       font-size: 12px;
+    }
+
+    @media (max-width: 1020px) {
+      bottom: 0;
+      left: 0;
+      width: 100%;
+    }
+    @media (max-width: 850px) {
+      display: none;
     }
   }
 }
