@@ -3,7 +3,7 @@ nav.navbar {
   border: none;
   background-color: transparent;
   margin: 0;
-  height: 70px;
+  height: 78px;
 
   @media (max-width: 850px) {
     height: auto;
@@ -16,7 +16,6 @@ nav.navbar {
 
   .navbar-nav {
     font-size: 16px;
-    letter-spacing: 1px;
     color: @gray;
 
     li {
@@ -34,7 +33,9 @@ nav.navbar {
       }
 
       a {
-        line-height: 40px;
+        padding: 10px 14px;
+        padding-top: 15px;
+        line-height: 51px;
         color: inherit;
         &:hover {
           color: @orange;
@@ -61,11 +62,19 @@ nav.navbar {
   font-size: 36px;
   color: @orange;
   letter-spacing: 0.5px;
-  @media (max-width: 550px) {
+  &:hover {
+    color: @orange;
+  }
+
+  @media (max-width: 600px) {
     margin-top: 0;
   }
 
   span {
     color: @pale-orange;
   }
+}
+
+.navbar > .container .navbar-brand {
+  margin-left: 0;
 }
